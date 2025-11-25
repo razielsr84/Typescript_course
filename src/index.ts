@@ -7,5 +7,4 @@ let user: User = {
 };
 
 const saludo: string = `La persona se llama ${user.name} ${user.lastName} y tiene ${user.age} años`;
-console.log("Hola mira esto :D ->");
 console.log("$" + saludo);
