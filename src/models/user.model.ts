@@ -1,5 +1,6 @@
-export interface User {
+export interface UserInterface {
   name: string;
   lastName: string;
   age: number;
+  presentation(): string;
 }

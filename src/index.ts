@@ -1,10 +1,16 @@
-import type { User } from "./models/user.model";
+interface Alumno {
+  nombre: string;
+  nota: number;
+}
 
-let user: User = {
-  name: "Juan",
-  lastName: "Perez",
-  age: 20,
+interface Profesor {
+  nombre: string;
+  titulo: string;
+}
+
+type Persona = Alumno | Profesor;
+
+const persona: Persona = {
+  nombre: "Juan",
+  nota: 12,
 };
-
-const saludo: string = `La persona se llama ${user.name} ${user.lastName} y tiene ${user.age} años`;
-console.log("$" + saludo);
